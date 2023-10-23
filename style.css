@@ -1,0 +1,50 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+/* General debug */
+/* header */
+header {
+    width: 100%;
+    background-color: darksalmon;
+    position: fixed;
+    z-index: 500;
+    padding: 30px;
+}
+/* jumbotron */
+.jumbo {
+    height: 70vh;
+    background-color: darkcyan;
+}
+/* jumbotron main container (has the maximum width of final elements) */
+.jumbo_container {
+    background-color: rgb(67, 106, 47);
+    height: 100%;
+    width: 80%;
+    margin: auto;
+}
+/* contains jumbo image and presentation paragraph */
+.jumbo_elements {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: end;
+    justify-content: center;
+}
+/* contained in jumbo elements CLASS */
+.p_presentation {
+    height: 50%;
+    width: 40%;
+    background-color: bisque;
+}
+/* contained in jumbo elements CLASS */
+.jumbo_image {
+    height: 50%;
+    width: 50%;
+    background-color: rgb(110, 81, 45);
+}
+
+/* jumbo end style */
+
+/* subscription page  */
+
+
+

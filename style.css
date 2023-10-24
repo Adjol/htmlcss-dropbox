@@ -147,3 +147,111 @@ header {
     display: flex;
     flex-direction: column;
 }
+
+/* Tool grid page */
+
+.db_tools {
+    width: 70%;
+    height: auto;
+    margin: auto;
+    background-color: rgb(255, 145, 0);
+}
+
+.card_img img {
+    max-width: 100%;
+}
+
+.card_title {
+    padding: 0 20px;
+}
+
+.tool_row_one {
+    display: flex;
+
+}
+.tool_row_one * {
+    margin: 20px;
+}
+.tool_no_one {
+    width: calc(100% - 40px);
+}
+.tool_no_two {
+    width: calc(100% - 40px);
+}
+.tool_no_three {
+    width: calc(100% - 40px);
+}
+
+
+/* provisorioooooooo */
+
+
+
+.tool_no_six {
+    margin-bottom: 150px;
+}
+
+
+/* customer page style start */
+
+#customer_title {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.major_clients {
+    display: flex;
+}
+
+.row_clients {
+    height: 200px;
+    width: calc(100% / 3);
+
+    display: flex;
+    margin:0 0 0 10px;
+}
+
+.designit {
+    background-image: url(img32/img/designit.svg);
+    background-color: #a2d39b;
+    width: 50%;
+    height: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* margin: 0 40px; */
+}
+
+.asu {
+    background-image: url(img32/img/arizona_state_university.svg);
+    background-color: #61082b;
+    width: 50%;
+    height: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* margin: 0 40px; */
+}
+
+.uf_florida {
+    background-image: url(img32/img/university_of_florida.svg);
+    background-color: #0093ce;
+    width: 50%;
+    height: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.topps {
+    background-image: url(img32/img/topps.svg);
+    background-color: #ff1c1c;
+    width: 50%;
+    height: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+/* gurppo destra */

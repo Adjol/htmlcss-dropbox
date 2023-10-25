@@ -4,20 +4,47 @@
 /* header */
 header {
     width: 100%;
-    background-color: darksalmon;
+    background-color: white;
     position: fixed;
     z-index: 500;
     padding: 30px;
+    display: flex;
 }
+
+
+.header_ul {
+    display: flex;
+    color: black;
+
+}
+
+.header_ul li {
+    padding: 0 20px;
+    list-style: none;
+}
+
+.header_links {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
 /* jumbotron */
 .jumbo {
-    height: 70vh;
-    background-color: darkcyan;
+
+    background-color: #b4d0e7;
 }
 /* jumbotron main container (has the maximum width of final elements) */
+
+.main_title{
+    padding-top: 200px;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+
 .jumbo_container {
-    background-color: rgb(67, 106, 47);
-    height: 100%;
     width: 80%;
     margin: auto;
 }
@@ -31,15 +58,39 @@ header {
 }
 /* contained in jumbo elements CLASS */
 .p_presentation {
-    height: 50%;
-    width: 40%;
-    background-color: bisque;
+    height: 100%;
+    width: 20%;
+    margin-bottom: 250px;
 }
+
+.blue_btn {
+    background-color: #0061ff;
+    height: 30px;
+    padding: 5px;
+    width: fit-content;
+    margin: 50px 0;
+}
+
+.blue_btn a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
 /* contained in jumbo elements CLASS */
 .jumbo_image {
-    height: 50%;
-    width: 50%;
-    background-color: rgb(110, 81, 45);
+    width: 70%;
+    display: flex;
+    justify-content: end;
+}
+
+.jumbo_image img{
+    height: 100%;
+    width: 100%;
+
 }
 
 /* jumbo end style */
@@ -47,65 +98,117 @@ header {
 /* subscription page  */
 
 .subscription {
-    /* height: 80vh; */
+
     width: 70%;
     margin: auto;
-    background-color: aquamarine;
+
 
 }
+
 .page_title {
     font-size: 50px;
-    background-color: azure;
+    margin: 100px 0;
 }
-.plan_cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 20px;
+.radio {
+    margin-bottom: 100px;
+}
 
+
+.plan_cards {
+    display: flex;
+    gap: 30px;
 }
 
 .plan_cards div {
-    margin-top: 100px;
-    background-color: darkgray;
     font-size: 20px;
 
 }
+.card_professional {
+    border: 1px solid #d6d6d9;
+    padding: 20px;
+}
+
+.card_advanced {
+    border: 1px solid #d6d6d9;
+    padding: 20px;
+}
+.card_enterprise {
+    border: 1px solid #d6d6d9;
+    padding: 20px;
+}
+.users {
+    text-align: center;
+    border-bottom: 1px solid #d6d6d9;
+}
+
+.card_title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-left: -20px;
+}
+
+.price {margin: 20px 0;}
+
+.range {
+    color: #858586;
+    margin-bottom: 20px;
+}
+
+.card_btn{margin-bottom: 30px;}
+
+.buy {margin-bottom: 25px;}
+
+.storage {
+    margin: 30px 0;
+}
+
+.features ul li {
+    list-style: none;
+    line-height: 50px;
+}
+.features ul li:nth-of-type(1) {
+    font-weight: 700;
+}
+
+
 
 .subscription_bottom {
-    /* height: 200px; */
-    width: 100%;
+
+    width: 70%;
+    margin: auto;
     margin-top: 100px;
-    background-color: cadetblue;
+    margin-bottom: 100px;
     border: 1px solid black;
 
 
 }
 
-.subscription_bottom * {
-    margin: 20px;
-}
+/* .subscription_bottom * {
+    padding: 20px;
+} */
 .team {
-
-    height: 30px;
-    background-color: blue;
-    border: 1px solid black;
+    border-bottom: 1px solid black;
     text-align: center;
+    width: 100%;
+    padding: 20px;
 }
+
+#solutions, #price { padding: 20px;}
 
 .contact {
     display: flex;
+    padding: 20px;
     justify-content: space-between;
-    border: 1px solid black;
-
 }
-.sub_title{
-    height: 50px;
-    width: 300px;
-    background-color: chocolate;
-    border: 1px solid black;
 
+#bottom_btn {
+    margin: 0;
+    display: flex;
+    align-items: center;
 }
+
+
+
 .contact_link {
     height: 50px;
     width: 300px;
@@ -124,37 +227,49 @@ header {
 .partner {
     width: 70%;
     margin: auto;
-    background-color: crimson;
+
 }
 
 
 
 .partner_flex{
     display: flex;
-    flex-wrap: wrap;
+    gap: 30px;
 }
 
 
 .partner_img {
-    max-width: 50%;
-    background-color: royalblue;
+    max-width: 90%;
 }
 
 .partner_img img{
-    max-width: 100%;
+    width: 100%;
 }
 .flex_column{
     display: flex;
     flex-direction: column;
+    max-width: 40%;
+    gap: 50px;
+    margin-top: 100px;
 }
+.flex_column h2 { font-size: 30px;}
+
+.white_btn {
+    border: 1px solid rgb(58, 58, 58);
+    width: fit-content;
+    padding: 20px;
+}
+.white_btn a {
+    text-align: center;
+    text-decoration: none;
+}
+
 
 /* Tool grid page */
 
 .db_tools {
     width: 70%;
-    height: auto;
     margin: auto;
-    background-color: rgb(255, 145, 0);
 }
 
 .card_img img {
@@ -163,6 +278,7 @@ header {
 
 .card_title {
     padding: 0 20px;
+    font-size: 30px;
 }
 
 .tool_row_one {
@@ -172,86 +288,340 @@ header {
 .tool_row_one * {
     margin: 20px;
 }
-.tool_no_one {
-    width: calc(100% - 40px);
-}
-.tool_no_two {
-    width: calc(100% - 40px);
-}
-.tool_no_three {
-    width: calc(100% - 40px);
+
+
+.tool_row_two {
+    display: flex;
+    max-width: 100%;
 }
 
 
-/* provisorioooooooo */
 
 
 
-.tool_no_six {
-    margin-bottom: 150px;
-}
 
 
 /* customer page style start */
 
+
+
+/* main containers */
 #customer_title {
     width: 70%;
     margin: auto;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 
-.major_clients {
+#customer_container {
     display: flex;
+    height: 450px;
 }
 
-.row_clients {
-    height: 200px;
+.left_custs{
+
     width: calc(100% / 3);
 
-    display: flex;
-    margin:0 0 0 10px;
+}
+.customer_description {
+
+    width: calc(100% / 3);
+    background-color: #f5f5f5;
 }
 
-.designit {
-    background-image: url(img32/img/designit.svg);
+.right_custs {
+
+    width: calc(100% / 3);
+}
+
+/* customers logo left group */
+
+.up_left_row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+
+.up_left_row img {
+    max-width: 50%;
+    margin-left: 30px;
+    height: 50%;
+}
+
+.designit{
     background-color: #a2d39b;
-    width: 50%;
-    height: 100%;
-    background-position: center;
+    background-image: url(img32/img/designit.svg);
     background-size: contain;
     background-repeat: no-repeat;
-    /* margin: 0 40px; */
+    background-position: center;
+    width: 50%;
+    height: 100%;
 }
 
 .asu {
-    background-image: url(img32/img/arizona_state_university.svg);
     background-color: #61082b;
-    width: 50%;
-    height: 100%;
-    background-position: center;
+    background-image: url(img32/img/arizona_state_university.svg);
     background-size: contain;
     background-repeat: no-repeat;
-    /* margin: 0 40px; */
+    background-position: center;
+    width: 50%;
+    height: 100%;
+}
+
+/* down left row */
+
+
+.down_left_row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+.down_left_row img {
+    max-width: 50%;
+    margin-left: 30px;
+    height: 50%;
 }
 
 .uf_florida {
-    background-image: url(img32/img/university_of_florida.svg);
     background-color: #0093ce;
-    width: 50%;
-    height: 100%;
-    background-position: center;
+    background-image: url(img32/img/university_of_florida.svg);
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+    height: 100%;
 }
+
 .topps {
-    background-image: url(img32/img/topps.svg);
     background-color: #ff1c1c;
-    width: 50%;
-    height: 100%;
-    background-position: center;
+    background-image: url(img32/img/topps.svg);
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+    height: 100%;
 }
 
 
-/* gurppo destra */
+
+
+.logo_holder {
+    width: 90%;
+    margin: auto;
+    height: 100%;
+    background-color: #0061ff;
+    display: none;
+}
+
+
+
+
+.customer_description:hover .logo_holder{
+    display: flex;
+}
+
+
+
+/* right group */
+
+/* up right row */
+
+.up_right_row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+.up_right_row img {
+    max-width: 50%;
+    margin-left: 30px;
+    height: 50%;
+}
+
+.wbr {
+    background-color: #d5001f;
+    background-image: url(img32/img/world_bicycle_relief.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+    height: 100%;
+}
+
+.hearts {
+    background-color: #b4d0e7;
+    background-image: url(img32/img/hearst_corp.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+    height: 100%;
+}
+
+/* down right row */
+
+.down_right_row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+
+.down_right_row img {
+    max-width: 50%;
+    margin-left: 30px;
+    height: 50%;
+    filter: invert(100%) sepia(0%) saturate(3642%) hue-rotate(220deg) brightness(114%) contrast(101%);
+
+}
+
+.lonley_planet {
+    background-color: #0d2481;
+    background-image: url(img32/img/lonely_planet.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+    height: 100%;
+}
+
+.clear_channel {
+    background-color: #ffd830;
+    background-image: url(img32/img/clear_channel.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+    height: 100%;
+}
+
+
+
+.bottom_customers {
+    width: 100%;
+    height: 250px;
+    background-color: #b4d0e7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.commercial {
+    width: 70%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    color: #61082b;
+    font-size: 30px;
+}
+
+
+#white_btn_no_border {
+    height: 30px;
+    padding: 0 5%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+#white_btn_no_border a {
+    font-size: 15px;
+    text-decoration: none;
+}
+
+
+
+
+/* faq */
+
+.faq {
+    width: 70%;
+    margin: auto;
+}
+
+.page_title {
+    margin-bottom: 100px;
+}
+
+.question {
+    line-height: 50px;
+    border-top: 1px solid black;
+    font-weight: bold;
+}
+
+.last_question{
+    border-bottom: 1px solid black;
+    margin-bottom: 100px;
+}
+
+
+/* open answer on hover efect */
+
+/* first question */
+.lorem_ans {
+    display: none;
+}
+
+
+.first:hover .faq{
+    display: flex;
+    flex-direction: column;
+}
+
+.first:hover .lorem_ans {
+    display: flex;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+/* second question */
+
+.second:hover .lorem_ans {
+    display: flex;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+/* last_question */
+
+.last_question:hover .lorem_ans {
+    display: flex;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+
+
+
+
+
+
+
+/* footer */
+footer {
+    background-color: #000000;
+}
+
+
+.list_container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.list_container ul {
+    margin: 50px;
+    line-height: 30px;
+}
+
+.footer_ul li:first-of-type{
+    font-size: 25px;
+}
+
+
+
+.footer_ul li{
+    color: white;
+    list-style: none;
+}
